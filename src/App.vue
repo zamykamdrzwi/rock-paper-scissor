@@ -14,5 +14,7 @@ body {
   background-color: #1E1F26;
   font-family: "SUSE", sans-serif;
   color: #D1D1D1;
+  width: 100%;
+  padding: 0;
 }
 </style>

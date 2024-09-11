@@ -75,7 +75,7 @@ const whoWin = (player, enemy) => {
 </script>
 
 <template>
-  <section>
+  <section class="section">
     <div class="title">
       <h1>Paper Rock Scissors Game</h1>
     </div>
@@ -122,6 +122,10 @@ const whoWin = (player, enemy) => {
 </template>
 
 <style scoped lang="scss">
+.section {
+  width: 100%;
+}
+
 .title {
   display: flex;
   width: 100%;
@@ -131,6 +135,15 @@ const whoWin = (player, enemy) => {
     margin-top: 80px;
     font-size: 54px;
     letter-spacing: 1px;
+    text-align: center;
+
+    @media(max-width: 900px) {
+      padding: 30px;
+    }
+
+    @media(max-width: 430px) {
+      font-size: 44px;
+    }
   }
 }
 
@@ -139,6 +152,18 @@ const whoWin = (player, enemy) => {
   display: flex;
   width: 100%;
   justify-content: center;
+
+  @media(max-width: 900px) {
+    padding: 30px 0 30px 0;
+  }
+
+  @media(max-width: 700px) {
+    margin-top: 80px;
+  }
+
+  @media(max-width: 430px) {
+    margin-top: 40px;
+  }
 }
 
 .box {
